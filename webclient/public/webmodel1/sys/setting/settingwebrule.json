@@ -1,0 +1,29 @@
+{
+  "tmautosave": {
+    "opt": {
+      "type": "number",
+      "max": 800000,
+      "unit": "ms"
+    }
+  },
+  "onconsole": {
+    "type": "number",
+    "comp": "onconsole"
+  },
+  "tyrobot": {
+    "type": "text",
+    "comp": "AsaiSelect"
+  },
+  "tyclient": {
+    "type": "text",
+    "comp": "AsaiSelect"
+  },
+  "tytreemenu": {
+    "type": "text",
+    "comp": "AsaiSelect"
+  },
+  "tyhandle": {
+    "type": "text",
+    "comp": "AsaiSelect"
+  }
+}

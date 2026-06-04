@@ -4,12 +4,11 @@ const props: any = defineProps<{
 }>();
 const { $model } = props.ujt;
 
-// 挂载：先动态挂载一下views里面的组件，方便路由解构
-$model.comps = (import.meta as any).glob(['./**/!(_)*/!(_)*.vue']);
+$model.comps = (import.meta as any).glob(['./**/*.vue', '!./**/_*/**', '!./**/_*.vue']);
 </script>
 
 <template>
-  <AsaiWebModule :ujt="ujt" :module="{ value: 'main', label: '测试模块' }"></AsaiWebModule>
+  <AsaiWebModule :ujt="ujt" :module="{ value: 'webmain', label: '测试模块' }"></AsaiWebModule>
 </template>
 
 <style lang="scss">

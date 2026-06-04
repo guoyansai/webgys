@@ -1,0 +1,12 @@
+{
+  "tyrobot": "default",
+  "tyhandle": "default",
+  "tyclient": "browser",
+  "tmautosave": 60000,
+  "ontreelang": true,
+  "onsynccrp": false,
+  "onkeyboard": true,
+  "onhp": false,
+  "oncommand": true,
+  "onvision": false
+}

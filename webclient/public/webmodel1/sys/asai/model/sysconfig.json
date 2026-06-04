@@ -1,0 +1,67 @@
+{
+    "theme": [
+        "theme-light",
+        "theme-dark"
+    ],
+    "lang": [
+        "zh-CN",
+        "en"
+    ],
+    "website": [
+        [
+            "/book",
+            "📚",
+            "#667eea"
+        ],
+        [
+            "/asai-web-asp/",
+            "🖥️",
+            "#f5576c"
+        ],
+        [
+            "/asai-2022/",
+            "📅",
+            "#4facfe"
+        ],
+        [
+            "/asai-2025/",
+            "🌟",
+            "#fa709a"
+        ],
+        [
+            "/asai-ewm/",
+            "🔲",
+            "#00c6fb"
+        ],
+        [
+            "/asai-h5/",
+            "🎮",
+            "#f093fb"
+        ],
+        [
+            "/asai-jl-2022-h5/",
+            "📱",
+            "#d299c2"
+        ],
+        [
+            "/asai-jl-2022-html/",
+            "🌐",
+            "#a8edea"
+        ],
+        [
+            "/asai-jl-2022-txt/",
+            "📄",
+            "#fed6e3"
+        ],
+        [
+            "/asai-music/",
+            "🎧",
+            "#89f7fe"
+        ],
+        [
+            "/asai-shua/",
+            "🔄",
+            "#fee140"
+        ]
+    ]
+}

@@ -49,7 +49,7 @@ const appmodules: any = {
           delay: 200,
         }),
       ];
-    })
+    }) || []
   ),
 };
 </script>

@@ -1,0 +1,16 @@
+{
+  "sysdb": {
+    "user": {
+      "channel": "cocontroluser",
+      "model": "cocontrol",
+      "dty": "json",
+      "path": "webdata/webdb/channeljson/cocontrol_cocontroluser/"
+    }
+  },
+  "syspath": {
+    "updir": "./webdata/upload/",
+    "webclientlog": "./webdata/webdb/log/client/",
+    "webserverlog": "./webdata/webdb/log/server/",
+    "robotlog": "./webdata/webdb/log/"
+  }
+}

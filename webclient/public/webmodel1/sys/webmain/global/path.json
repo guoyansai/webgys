@@ -1,0 +1,42 @@
+{
+  "path": {
+    "upproject": "./webdata/webdb/cocontrol/",
+    "wifi": "./webdata/webdb/wifiAp"
+  },
+  "configinout": {
+    "filepath": "./webdata/upload/",
+    "filename": "inout",
+    "filetype": ".zip",
+    "filepos": {
+      "product_config.yaml": ["../control/product_config.yaml", 9],
+      "binded_config.yaml": ["../control/binded_config.yaml", 9],
+      "ip": ["../ip", 9],
+      "install_config.yaml": ["../control/data/install_config.yaml", 0],
+      "safety_config.yaml": ["../control/data/safety_config.yaml", 0],
+      "tool_config.yaml": ["../control/data/tool_config.yaml", 0],
+      "payload_config.yaml": ["../control/data/payload_config.yaml", 0],
+      "coordinate_config.yaml": ["../control/data/coordinate_config.yaml", 0],
+      "conveyor_1.yaml": ["../control/data/config/conveyor/conveyor_1.yaml", 0],
+      "conveyor_2.yaml": ["../control/data/config/conveyor/conveyor_2.yaml", 0],
+      "user_io_name.yaml": ["../control/data/user_io_name.yaml", 0],
+      "user_di_function.yaml": ["../control/data/user_di_function.yaml", 0],
+      "user_do_function.yaml": ["../control/data/user_do_function.yaml", 0],
+      "modbus_tcp.yaml": ["../control/data/modbus_tcp.yaml", 0],
+      "register_user_config.yaml": ["../control/data/register_user_config.yaml", 0],
+      "register_communicator_config.yaml": ["../control/data/register_communicator_config.yaml", 0],
+      "sdo_config.yaml": ["../control/data/sdo_config.yaml", 9],
+      "global_vars.json": ["../control/data/projects/global_vars.json", 0],
+      "additional_axis.yaml": ["../control/data/additional_axis.yaml", 0],
+      "genericConfig": ["../control/data/welder/genericConfig/", 0, "weld"],
+      "multiWeld.yaml": ["../control/data/welder/multiWeld.yaml", 0, "weld"],
+      "singleWeld.yaml": ["../control/data/welder/singleWeld.yaml", 0, "weld"],
+      "safety_config": ["../control/data/nex_cobot/", 0],
+      "projectgroup": ["./webdata/webdb/cocontrol/projectgroup/", 9],
+      "projectlua": ["./webdata/webdb/cocontrol/projectlua/", 9],
+      "projecttree": ["./webdata/webdb/cocontrol/projecttree/", 9],
+      "device_config.yaml": ["../control/data/device_config.yaml", 9, "multiarm"],
+      "robotconfig": ["../control/data/robot/", 9, "multiarm", ["-config.yaml$"]],
+      "robotcalibrate": ["../control/data/robot/", 9, "multiarm", ["-calibrate.yaml$"]]
+    }
+  }
+}

@@ -10,12 +10,14 @@ $global.module.value = 'views';
 $global.module.label = '主模块';
 
 // 挂载：先动态挂载一下views里面的组件，方便路由解构
-$model.comps = (import.meta as any).glob(['./default.vue', './**/!(_)*/!(_)*.vue']);
+
+$model.comps = (import.meta as any).glob(['./**/*.vue', '!./**/_*/**', '!./**/_*.vue']);
 
 $fn.initrouter();
 </script>
 
 <template>
+  {{ $model.comps }}
   <RouterView :ujt="ujt" :ty="0"></RouterView>
 </template>
 

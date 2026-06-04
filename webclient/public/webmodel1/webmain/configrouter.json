@@ -1,0 +1,17 @@
+{
+  "config": {
+    "index": "webmain",
+    "indexs": {
+      "welcome": "webmain/welcome"
+    },
+    "login": "webuser/login",
+    "loading": "PageLoad",
+    "lv": 0
+  },
+  "rights": {
+    "lv0": ["webuser/login", "webuser/exit"],
+    "lv1": [],
+    "lv2": [],
+    "lv3": ["webuser/reg"]
+  }
+}

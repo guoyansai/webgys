@@ -1,0 +1,73 @@
+{
+    "servertype": 0,
+    "defaultws": "cocontrol",
+    "api": {
+        "web": {
+            "url": "http://localhost:9198",
+            "port": 9198
+        },
+        "ai": {
+            "url": "http://localhost:11434"
+        },
+        "default": "web",
+        "weld": "default",
+        "welding": "default",
+        "palletizing": "default",
+        "multiarm": "default",
+        "dualarm": "default"
+    },
+    "ws": {
+        "web": {
+            "close": 0,
+            "url": "ws://localhost:9198",
+            "port": 9198,
+            "sec": 1,
+            "worker": 0,
+            "config": {
+                "tmdeltask": 600000,
+                "resend": 0,
+                "resendmax": 10
+            }
+        },
+        "default": {
+            "close": 0,
+            "url": "ws://localhost:9000",
+            "port": 9000,
+            "sec": 0,
+            "worker": 1,
+            "config": {
+                "tmdeltask": 600000,
+                "resend": 0,
+                "resendmax": 10
+            }
+        },
+        "weld": "default",
+        "welding": "default",
+        "palletizing": "default",
+        "multiarm": {
+            "close": 0,
+            "url": "ws://localhost:9900",
+            "port": 9900,
+            "sec": 0,
+            "worker": 1,
+            "config": {
+                "tmdeltask": 600000,
+                "resend": 0,
+                "resendmax": 10
+            }
+        },
+        "dualarm": "multiarm",
+        "covision": {
+            "close": 0,
+            "url": "ws://localhost:9090",
+            "port": 9090,
+            "sec": 0,
+            "worker": 1,
+            "config": {
+                "tmdeltask": 600000,
+                "resend": 0,
+                "resendmax": 10
+            }
+        }
+    }
+}

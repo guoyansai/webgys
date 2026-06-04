@@ -1,0 +1,14 @@
+{
+  "config": {
+    "index": "",
+    "login": "",
+    "loading": "PageLoad",
+    "lv": 3
+  },
+  "rights": {
+    "lv0": ["testkdd/testlv0", "admin/upgrade", "user/login", "user/reg", "user/exit"],
+    "lv1": ["testkdd/testlv1"],
+    "lv2": ["testkdd/testlv2"],
+    "lv3": ["testkdd/testlv3"]
+  }
+}

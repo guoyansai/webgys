@@ -1,0 +1,28 @@
+{
+  "webver": "2.0",
+  "dttm": "2025-02-28 10:10:10",
+  "env": "dev",
+  "devlevel": 2,
+  "catcherror": 0,
+  "zoomid": "asaiwebzoomid",
+  "zoomwidth": 1920,
+  "zoomheight": 1200,
+  "tmbeat": 0,
+  "onweblog": true,
+  "onwebsitemap": false,
+  "onwebws": true,
+  "onckuseronline": true,
+  "onconsole": 1,
+  "local": {
+    "lang": "as-lang",
+    "theme": "as-theme"
+  },
+  "aes": {
+    "lv": 1,
+    "keybase64": "AsaiFfQ1hMYYvT2N4Y1BhenJ0RjY0M2cxWTMZXdXMVY=",
+    "aad": "asai aes aad",
+    "keylength": 256,
+    "ivlength": 12,
+    "algorithm": "AES-GCM"
+  }
+}

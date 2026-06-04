@@ -1,0 +1,11 @@
+{
+  "dir": [
+    "asai/model/configrouter.json",
+    "asai/model/sysconfig.json",
+    "asai/theme/themedefault.json",
+    "setting/settingpassword.json",
+    "setting/settinglang.json",
+    "setting/settingwebrule.json",
+    "setting/settingweb.json"
+  ]
+}
