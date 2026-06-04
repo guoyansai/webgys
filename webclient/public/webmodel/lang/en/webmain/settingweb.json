@@ -1,0 +1,43 @@
+{
+  "oncommand": "On Command",
+  "onsynccrp": "On Sync CRP",
+  "onvision": "On Vision",
+  "onweblog": "Front-end Log",
+  "onconsole": "Console State",
+  "ontreelang": "Tree Language",
+  "onkeyboard": "On Keyboard",
+  "onhp": "On HP",
+  "tmbeat": "Heartbeat Time",
+  "tmautosave": "Auto Save Time",
+  "zoomwidth": "Window Width",
+  "zoomheight": "Window Height",
+  "tytreemenu": "Program Tree Menu",
+  "tytreemenudata": {
+    "default": "Left Side Menu",
+    "pop": "Popup Menu"
+  },
+  "tyrobot": "Robot Type",
+  "tyrobotdata": {
+    "default": "Default",
+    "weld": "Weld",
+    "welding": "Welding",
+    "palletizing": "Palletizing",
+    "multiarm": "Multi Robot"
+  },
+  "tyclient": "Client Type",
+  "tyclientdata": {
+    "browser": "Browser",
+    "browsertouch": "Touch Browser",
+    "pad": "Pad",
+    "padteach": "Pad Teach",
+    "app": "App"
+  },
+  "tyhandle": "Attached Device",
+  "tyhandledata": {
+    "default": "None",
+    "weld": "Weld Remote (Wired)",
+    "weld1select": "Weld End (Self-developed)",
+    "weld2": "Weld Handle (Global)",
+    "bollard": "Palletizing Bollard"
+  }
+}

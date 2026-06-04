@@ -1,0 +1,72 @@
+{
+  "name": "webserver",
+  "version": "0.1.0",
+  "author": "estun",
+  "license": "ISC",
+  "description": "EU GDPR & NIS2 compliant backend server (hardened binary)",
+  "main": "index.js",
+  "bin": "index.js",
+  "private": true,
+  "scripts": {
+    "dev": "nodemon app.ts",
+    "tsc": "tsc app.ts",
+    "ncc": "npm run tsc && ncc build ./app.js -m -o ./ --external ./plugs/** --external=@serialport/bindings-cpp",
+    "pkg:prepare": "node -e \"require('fs').mkdirSync(process.env.PKG_CACHE_PATH || './.pkg-cache', {recursive:true})\"",
+    "pkgwin": "cross-env PKG_CACHE_PATH=./.pkg-cache npm run pkg:prepare && npm run ncc && pkg . -t node20-win-x64 -o ./webwin.exe --bytecode --public-packages \"*\"",
+    "pkglinux": "cross-env PKG_CACHE_PATH=./.pkg-cache npm run pkg:prepare && pkg . -t node20-linux-x64 -o ./weblinux --bytecode --public-packages \"*\"",
+    "pkgarm": "cross-env PKG_CACHE_PATH=./.pkg-cache npm run pkg:prepare && pkg . -t node20-linux-arm64 -o ./webarm --no-bytecode --public-packages \"*\" --public",
+    "build": "npm run pkgwin && npm run pkglinux && npm run pkgarm",
+    "security-check": "npm audit --audit-level=high",
+    "preinstall": "npx check-engine"
+  },
+  "ncc": {
+    "assetBuilds": []
+  },
+  "pkg": {
+    "assets": [
+      "./webclient/assets/**/*",
+      "./webclient/index.html"
+    ],
+    "targets": [
+      "node20-linux-arm64",
+      "node20-linux-x64",
+      "node20-win-x64"
+    ],
+    "scripts": [],
+    "ignore": []
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src/**",
+      "app.ts"
+    ],
+    "delay": 1800
+  },
+  "dependencies": {
+    "asai-nodejs-dbfile": "0.2.4",
+    "asai-nodejs-fs": "0.2.1",
+    "asai-nodejs-host": "0.2.29"
+  },
+  "devDependencies": {
+    "@types/node": "20.17.0",
+    "@vercel/ncc": "0.38.4",
+    "@yao-pkg/pkg": "6.19.0",
+    "cross-env": "^10.1.0",
+    "nodemon": "3.1.9",
+    "ts-node": "10.9.2",
+    "typescript": "5.8.3"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "yarn": ">=1.22.0"
+  },
+  "os": [
+    "win32",
+    "linux",
+    "darwin"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ]
+}

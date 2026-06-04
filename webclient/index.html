@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="hostname" content="%VITE_ENV_TYPE%" />
+    <meta http-equiv="cache-control" content="no-cache, no-store,must-revalidate" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <link rel="icon" href="/webmodel/files/img/favicon.ico" />
+    <title>AsaiWeb</title>
+    <script charset="UTF-8" crossorigin src="/webmodel/files/cfg.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .as-load-area,
+        .as-load-area>.as-load-icon,
+        .as-load-area>.as-load-msg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .as-load-area {
+            width: 100vw;
+            height: 100vh;
+            overflow: auto;
+        }
+
+        .as-load-area>.as-load-icon {
+            height: 128px;
+        }
+
+        .as-load-area>.as-load-msg {
+            height: 128px;
+        }
+
+        .as-load-msg>.tit {
+            padding: 20px 0;
+        }
+
+        .as-load-gif,
+        .as-load-gif::after {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border: 10px solid transparent;
+            border-radius: 50%;
+            transform: translateZ(0);
+            backface-visibility: hidden;
+            border-top-color: #b8c7ff;
+            border-right-color: #9f7aea;
+            border-bottom-color: #6c8cff;
+        }
+
+        .as-load-gif {
+            animation: as-load-gif-spin 2s ease-in-out infinite;
+        }
+
+        .as-load-gif::after {
+            content: ' ';
+            width: calc(100% - 40px);
+            height: calc(100% - 40px);
+            animation: as-load-gif-spin 1s ease-out infinite;
+        }
+
+        @keyframes as-load-gif-spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <!--app-head-->
+</head>
+
+<body>
+    <div id="app">
+        <div class="as-load-area">
+            <img src="/webmodel/files/logo.png" width="200" />
+            <div class="as-load-icon">
+                <div class="as-load-gif" style="width:68px;height:68px"></div>
+            </div>
+            <div class="as-load-msg" style="font-size:larger;">
+                Loading...
+            </div>
+        </div>
+        <!--app-html-->
+    </div>
+    <script type="module" src="/src/%VITE_MAIN_JS%.ts"></script>
+    <script charset="UTF-8" crossorigin src="/webmodel/files/asai.js"></script>
+</body>
+
+</html>

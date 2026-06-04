@@ -1,0 +1,29 @@
+{
+  "website": [
+    ["阿赛书架", "书籍、笔记、资源收藏"],
+    ["ASP 网站系统", "经典 ASP 版本系统"],
+    ["工作室 2022", "2022 年作品展示"],
+    ["工作室 2025", "2025 年最新作品"],
+    ["二维码制作", "在线二维码生成"],
+    ["HTML5 游戏", "休闲小游戏合集"],
+    ["简历 H5 版", "2022 H5 简历"],
+    ["简历 HTML 版", "2022 HTML 简历"],
+    ["简历 TXT 版", "2022 TXT 简历"],
+    ["阿赛音乐", "在线音乐播放"],
+    ["刷新页面", "快速刷新当前页"]
+  ],
+  "routers": {
+    "kududu/kududu-channel": "TEST",
+    "kududu/kududu-clientfile": "CL",
+    "kududu/kududu-file": "FILE",
+    "kududu/kududu-json": "JSON",
+    "kududu/kududu-sqlite": "DB",
+    "kududu/kududu-user": "User",
+    "kududu/kududunews": "News",
+    "kududu/kududuarticle": "Art",
+    "kududu/kududuproduct": "PD",
+    "kududu/kudududown": "Down",
+    "kududu/kududuchat": "Chat",
+    "kududu/kududuchatai": "AI"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "webtit": "酷卓控制器平台",
+  "webdesc": ["阿赛工作室", "阿赛导航中心", "搜索导航..."],
+  "link": {
+    "class": {
+      "api": "API请求服务",
+      "ws": "WS通信服务"
+    },
+    "webserver": "服务地址",
+    "web": "WEB服务",
+    "cocontrol": "控制器WS",
+    "covision": "视觉WS"
+  }
+}

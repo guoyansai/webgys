@@ -1,0 +1,12 @@
+{
+  "langs": {
+    "zh-CN": "简体中文",
+    "en": "English"
+  },
+  "dir": [
+    "sys/configweb.json",
+    "sys/configsite.json",
+    "sys/asai/asai.json",
+    "webmain/settingweb.json"
+  ]
+}

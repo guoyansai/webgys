@@ -1,0 +1,29 @@
+{
+  "website": [
+    ["Asai Bookshelf", "Books, Notes, and Resource Collection"],
+    ["ASP Website System", "Classic ASP Version System"],
+    ["Asai Studio 2022", "2022 Work Showcase"],
+    ["Asai Studio 2025", "2025 Latest Work Showcase"],
+    ["QR Code Generation", "Online QR Code Generation"],
+    ["HTML5 Games", "Relaxed Small Games Collection"],
+    ["Resume H5", "2022 H5 Resume"],
+    ["Resume HTML", "2022 HTML Resume"],
+    ["Resume TXT", "2022 TXT Resume"],
+    ["Asai Music", "Online Music Playback"],
+    ["Refresh Page", "Quick Refresh Current Page"]
+  ],
+  "routers": {
+    "kududu/kududu-channel": "TEST",
+    "kududu/kududu-clientfile": "CL",
+    "kududu/kududu-file": "FILE",
+    "kududu/kududu-json": "JSON",
+    "kududu/kududu-sqlite": "DB",
+    "kududu/kududu-user": "User",
+    "kududu/kududunews": "News",
+    "kududu/kududuarticle": "Art",
+    "kududu/kududuproduct": "PD",
+    "kududu/kudududown": "Down",
+    "kududu/kududuchat": "Chat",
+    "kududu/kududuchatai": "AI"
+  }
+}

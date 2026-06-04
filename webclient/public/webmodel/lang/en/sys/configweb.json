@@ -1,0 +1,14 @@
+{
+  "webtit": "Asai Studio",
+  "webdesc": ["Asai Studio", "Asai Navigation Center", "Search Navigation..."],
+  "link": {
+    "class": {
+      "api": "API",
+      "ws": "WS"
+    },
+    "webserver": "Web Server",
+    "web": "Web ws",
+    "cocontrol": "Control ws",
+    "covision": "Vision ws"
+  }
+}

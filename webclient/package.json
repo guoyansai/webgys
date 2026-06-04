@@ -1,0 +1,39 @@
+{
+  "name": "webclient",
+  "version": "0.0.1",
+  "author": "asai.cc",
+  "license": "ISC",
+  "description": "WEB client for ASAI & CoControl (Vue3 + Vite)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "format": "prettier --write src/",
+    "security-check": "npm audit --audit-level=high",
+    "preinstall": "npx check-engine"
+  },
+  "dependencies": {
+    "asai-js-as": "0.2.5",
+    "asai-vue-css": "0.2.14",
+    "asai-vue-host": "0.2.56",
+    "vue": "3.5.22"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.3",
+    "@vitejs/plugin-vue": "^6.0.6",
+    "@vue/tsconfig": "^0.9.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.12",
+    "vue-tsc": "^3.2.8",
+    "vite-plugin-bundle-obfuscator": "^1.11.0",
+    "javascript-obfuscator": "^5.4.1",
+    "sass": "^1.93.2",
+    "terser": "^5.44.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}

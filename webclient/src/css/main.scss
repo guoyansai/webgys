@@ -1,0 +1,18 @@
+// 注意：使用@use引入，不要用@import
+@use './base.scss';
+@use './asaiweb.scss';
+
+.monaco-editor {
+    .overflowingContentWidgets {
+        z-index: 8888 !important;
+    }
+
+    .suggest-widget,
+    .suggest-details {
+        z-index: 8888 !important;
+
+        &:has(> div.message:has-text('No suggestions.')) {
+            display: none !important;
+        }
+    }
+}

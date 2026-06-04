@@ -1,0 +1,518 @@
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+header,
+menu,
+section,
+p,
+input,
+td,
+th {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cv8);
+}
+
+img {
+  vertical-align: top;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+select,
+input,
+textarea,
+button {
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  height: 28px;
+  line-height: 28px;
+  background-color: transparent;
+  color: var(--cu8);
+}
+
+option {
+  background-color: var(--cr0);
+  color: var(--cu8);
+}
+
+/* 整体滚动条宽度/高度 */
+::-webkit-scrollbar {
+  width: var(--sa1);
+  height: var(--sa1);
+}
+
+/* 隐藏两端按钮 —— 极简灵魂所在 */
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* 透明轨道，干净无痕 */
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* 滑块：纯色 + 大圆角（半径 = 宽度一半，形成胶囊形）*/
+::-webkit-scrollbar-thumb {
+  background: var(--cu1);
+  border-radius: calc(var(--sa1) / 2);
+  min-height: 40px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cu3);
+}
+
+/* 隐藏滚动条 + 保留滚动 */
+.hide-scrollbar {
+  overflow: auto;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+}
+
+// 设置#app元素的宽度为100%，高度为100vh
+#app {
+  width: 100%;
+  height: 100vh;
+  font-size: var(--sa1);
+}
+
+// 缩放空间的样式框
+.zoom-container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform-origin: 0 0;
+  will-change: transform;
+  transition: transform 0.3s ease;
+  box-shadow:
+    5px 5px 10px rgba(0, 0, 0, 0.3),
+    -5px -5px 15px rgba(0, 0, 0, 0.2);
+  // overflow: hidden;
+  // border-radius: 18px;
+}
+
+.zoom-container-style {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform-origin: 0 0;
+  will-change: transform;
+  transition: transform 0.3s ease;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+// 处理无权限功能
+.runcss,
+.remotecss,
+.asailevel {
+  position: relative;
+  user-select: none;
+  pointer-events: none;
+
+  * {
+    pointer-events: none;
+  }
+
+  &::after {
+    content: ' ';
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.2;
+    background-image: linear-gradient(45deg, var(--cr0) 20%, var(--cu2) 30%, var(--cu4) 50%, var(--cr0) 60%, var(--cr0) 70%, var(--cu2) 80%, var(--cu4) 100%);
+    border-radius: 2%;
+    background-size: 28px 28px;
+    background-repeat: repeat;
+  }
+}
+
+.remotecss::after,
+.runcss::after {
+  opacity: 0.2;
+}
+
+.touch-none {
+  touch-action: none;
+  // auto：浏览器可以自由处理触摸事件。
+  // none：浏览器不处理触摸事件。
+  // pan-x：允许水平移动。
+  // pan-y：允许垂直移动。
+  // manipulation：对双指触控进行缩放和平移的支持。
+}
+
+#asaiweb {
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+// WEB根元素样式*默认关闭，可以通过子模块的样式配置,如：asaiweb+模块名为类名，在模块的顶级路由中
+.asaiweb {
+  background-color: var(--cr0);
+  color: var(--cu8);
+}
+
+// 暂无数据的样式
+.as-nodata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  box-shadow: none !important;
+  &:hover {
+    background-color: transparent !important;
+  }
+
+  &::before {
+    display: block;
+    clear: both;
+    content: '⚠';
+    font-size: xx-large;
+  }
+}
+
+// 上传文本框样式
+.as-upload {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--sa3);
+
+  &::before {
+    font-size: var(--sa5);
+    content: '+';
+  }
+}
+
+// 弹窗用的调整大小样式
+.resize-bottom-right {
+  user-select: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  cursor: nwse-resize;
+  background-color: var(--cu4);
+  border-top-left-radius: 4px;
+  box-shadow: -1px -1px 2px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease;
+}
+
+.resize-bottom-right::after {
+  content: '';
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 12px 0 0;
+  border-color: transparent var(--cu8) transparent transparent;
+}
+
+.resize-bottom-right:hover {
+  background-color: var(--cu2);
+}
+
+// 表单样式
+.as-form-show,
+.as-form-align {
+  label {
+    &:hover {
+      background: linear-gradient(145deg, var(--cr3), transparent);
+    }
+
+    > span {
+      text-align: right;
+      width: 88px;
+      min-width: 88px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.as-form-line {
+  select,
+  input {
+    border-bottom: 1px solid var(--cu4);
+  }
+}
+
+.as-form-show {
+  select,
+  input {
+    pointer-events: none;
+  }
+}
+
+.as-list-nth {
+  > *:nth-child(odd) {
+    background: linear-gradient(145deg, var(--cr3), transparent);
+  }
+
+  > *:nth-child(even) {
+    background-color: transparent;
+  }
+}
+
+// 全屏用的样式
+.as-fullscreen {
+  position: fixed;
+  z-index: 198;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: var(--cr0);
+  // overflow: auto;
+}
+
+// 左右div
+.as-lr-area {
+  display: flex;
+}
+
+.as-left,
+.as-right {
+  display: flex;
+}
+
+.as-left {
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.as-right {
+  width: auto;
+  justify-content: flex-end;
+}
+
+// button 样式
+.as-btn-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 20px;
+  font-size: var(--sa2);
+
+  .as-btn,
+  .as-btn-cur {
+    display: inline-block;
+    margin: 20px 10px 0 10px;
+    padding: 8px 40px;
+    text-align: center;
+    font-size: var(--sa2);
+    cursor: pointer;
+    border-radius: 30px;
+    user-select: none;
+  }
+
+  .as-btn {
+    background-color: var(--cr3);
+    border: 1px solid var(--cs3);
+  }
+
+  .as-btn-cur {
+    color: var(--ct1);
+    background-color: var(--ct2);
+    border: 1px solid var(--ct2);
+  }
+}
+
+.app-area {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 60px);
+  padding: 20px;
+
+  .app-menu-area {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    align-content: flex-start;
+    overflow-y: auto;
+    max-height: 100%;
+    scrollbar-width: thin;
+    scrollbar-color: var(--cv5) var(--cv1);
+
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: var(--cv1);
+      border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--cv5);
+      border-radius: 4px;
+    }
+
+    .module {
+      background: var(--cu6) !important;
+      color: var(--cr0) !important;
+    }
+
+    .app-menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: var(--sa1);
+      background: linear-gradient(135deg, var(--cv0) 0%, var(--cv1) 100%);
+      color: var(--cv8);
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: var(--sa0);
+      position: relative;
+      overflow: hidden;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.1);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+
+        &::before {
+          opacity: 1;
+        }
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+
+      .menu-text {
+        font-size: var(--sa0);
+        font-weight: 500;
+        text-align: center;
+        width: 100%;
+        white-space: nowrap;
+        /* 禁止换行 */
+        overflow: hidden;
+        /* 隐藏溢出内容 */
+        text-overflow: ellipsis;
+        /* 显示省略号 */
+        direction: rtl;
+        /* 设置文本从右到左显示 */
+        // unicode-bidi: bidi-override; /* 强制覆盖文本方向 */
+        padding: 0 10px;
+      }
+    }
+  }
+
+  .app-logo {
+    height: auto;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .app-login {
+    height: auto;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  // 响应式设计
+  @media (max-width: 768px) {
+    .app-menu-area {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 15px;
+      padding: 15px;
+
+      .app-menu {
+        min-height: 70px;
+
+        .menu-text {
+          font-size: var(--sa0);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px;
+
+    .app-menu-area {
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      gap: 10px;
+      padding: 10px;
+
+      .app-menu {
+        min-height: 60px;
+        padding: 10px;
+
+        .menu-text {
+          font-size: var(--sa0);
+        }
+      }
+    }
+  }
+}

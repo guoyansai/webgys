@@ -1,0 +1,43 @@
+{
+  "oncommand": "开启快捷命令",
+  "onsynccrp": "开启同步工程",
+  "onvision": "开启视觉",
+  "onweblog": "前端日志",
+  "onconsole": "控制台状态",
+  "ontreelang": "多语言可视编程",
+  "onkeyboard": "开启软键盘",
+  "onhp": "开启高性能",
+  "tmbeat": "心跳时间",
+  "tmautosave": "自动保存时间",
+  "zoomwidth": "窗口宽度",
+  "zoomheight": "窗口高度",
+  "tytreemenu": "可视编程菜单",
+  "tytreemenudata": {
+    "default": "左侧菜单",
+    "pop": "弹窗菜单"
+  },
+  "tyrobot": "机器人类型",
+  "tyrobotdata": {
+    "default": "通用",
+    "weld": "通用焊接",
+    "welding": "焊接专机",
+    "palletizing": "码垛专机",
+    "multiarm": "多机器人"
+  },
+  "tyclient": "客户端类型",
+  "tyclientdata": {
+    "browser": "浏览器",
+    "padteach": "示教器",
+    "browsertouch": "触控浏览器",
+    "pad": "平板",
+    "app": "应用"
+  },
+  "tyhandle": "附加设备",
+  "tyhandledata": {
+    "default": "无",
+    "weld": "焊接遥控(有线)",
+    "weld1select": "焊接末端(自研)",
+    "weld2": "焊接支架",
+    "bollard": "码垛升降柱"
+  }
+}
