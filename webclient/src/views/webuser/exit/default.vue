@@ -1,6 +1,6 @@
 <template>
   <div class="as-load-area">
-    <img :src="wd.$CFG.logo" width="200" />
+    <img :src="wd.$CFG?.logo" width="200" />
     <h1>EXIT</h1>
   </div>
 </template>

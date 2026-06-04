@@ -1,6 +1,6 @@
 <template>
     <div class="as-load-area">
-        <img :src="wd.$CFG.logo" width="200" />
+        <img :src="wd.$CFG?.logo" width="200" />
         <div class="as-load-icon">
             <div class="as-load-gif" style="width: 68px; height: 68px"></div>
         </div>

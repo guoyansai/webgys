@@ -17,7 +17,6 @@ $fn.initrouter();
 </script>
 
 <template>
-  {{ $model.comps }}
   <RouterView :ujt="ujt" :ty="0"></RouterView>
 </template>
 
