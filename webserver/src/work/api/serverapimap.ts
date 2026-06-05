@@ -1,6 +1,7 @@
 module.exports = ($asai: any) => {
+  // 调用 ServerApi 获取 apiWork 方法
   $asai.hostserverapi = {
-    ...$asai.$lib.api,
+    ...($asai.$lib.api || {}),
     ...require('./testkdd/Index'),
   };
 

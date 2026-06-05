@@ -1,11 +1,12 @@
 module.exports = ($asai: any) => {
-    $asai.hostserversys = {
-        ...$asai.$lib.sys,
-        'sys/test': require('./testkdd/test.ts'),
-    };
+  // 调用 ServerSys 获取 sysWork 方法
+  const CommonModule = $asai.$lib.ServerSys ? $asai.$lib.ServerSys($asai) : {};
+  $asai.hostserversys = {
+    ...(CommonModule || {}),
+    'sys/test': require('./testkdd/test.ts'),
+  };
 
-    // 启动的API服务列表
-    $asai.hostserversyss = Object.keys($asai.hostserversys);
-    $asai.hostconfig.logger?.lv?.view &&
-        console.info(666.103, 'SYS服务', $asai.hostserversyss);
+  // 启动的SYS服务列表
+  $asai.hostserversyss = Object.keys($asai.hostserversys);
+  $asai.hostconfig.logger?.lv?.view && console.info(666.103, 'SYS服务', $asai.hostserversyss);
 };

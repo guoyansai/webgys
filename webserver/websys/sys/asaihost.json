@@ -28,11 +28,7 @@
       "server": "./webdata/webdb/log/server/"
     }
   },
-  "wssec": [
-    "asai",
-    "",
-    "-"
-  ],
+  "wssec": ["asai", "", "-"],
   "pkg": {
     "type": 1
   },
@@ -61,14 +57,14 @@
       "maxFreeSockets": 200,
       "redirect": false,
       "proxyhttptype": "http://",
-      "proxyport": 9298,
+      "proxyport": 8298,
       "httptype": "http://",
-      "port": 9598
+      "port": 8198
     },
     "asaiweb": {
       "proxyhttptype": "https://",
       "proxyip": "",
-      "proxyport": 9298,
+      "proxyport": 8298,
       "url": "",
       "httptype": "http://"
     }
@@ -76,14 +72,9 @@
   "hosts": {
     "asai": {
       "ws": 1,
-      "port": 9199,
+      "port": 8199,
       "mimetypes": {},
-      "hostdirs": [
-        "home",
-        "websys/webpage",
-        "webdata/upload",
-        "webdata/webdb/cocontrol/vision"
-      ]
+      "hostdirs": ["home", "websys/webpage", "webdata/upload", "webdata/webdb/cocontrol/vision"]
     },
     "default": {
       "ckhttp": 0,
@@ -95,7 +86,7 @@
       "oncors": 0,
       "wstype": "ws://",
       "httptype": "http://",
-      "port": 9598,
+      "port": 8198,
       "cors": []
     },
     "estunweb": {
@@ -110,34 +101,26 @@
       "weburls": {
         "rewrite": true,
         "webdir": "webclient",
-        "keys": [
-          "/cocontrol",
-          "/couser"
-        ]
+        "keys": ["/cocontrol", "/couser"]
       },
-      "hostdirs": [
-        "home",
-        "websys/webpage",
-        "webdata/upload",
-        "webdata/webdb/cocontrol/vision"
-      ]
+      "hostdirs": ["home", "websys/webpage", "webdata/upload", "webdata/webdb/cocontrol/vision"]
     },
     "estuncocontrol": {
       "close": 0,
       "ws": 1,
-      "port": 9000,
+      "port": 8000,
       "mimetypes": {}
     },
     "estuncomultiarm": {
       "close": 0,
       "ws": 1,
-      "port": 9900,
+      "port": 8900,
       "mimetypes": {}
     },
     "estuncovision": {
       "close": 0,
       "ws": 1,
-      "port": 9090,
+      "port": 8090,
       "mimetypes": {}
     }
   },
