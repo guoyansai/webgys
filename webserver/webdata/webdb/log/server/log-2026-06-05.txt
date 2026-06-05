@@ -7,3 +7,15 @@
 [10:09:10.698]; WS; WebSocket closed, server estuncocontrol, code: undefined, reason: undefined
 [10:09:10.699]; WS; WebSocket closed, server estuncomultiarm, code: undefined, reason: undefined
 [10:09:10.699]; WS; WebSocket closed, server estuncovision, code: undefined, reason: undefined
+[10:32:37.320]; SIGINT; SIGINT，CLOSING...
+[10:32:37.326]; WS; WebSocket closed, server asai, code: undefined, reason: undefined
+[10:32:37.326]; WS; WebSocket closed, server estuncocontrol, code: undefined, reason: undefined
+[10:32:37.327]; WS; WebSocket closed, server estuncomultiarm, code: undefined, reason: undefined
+[10:32:37.326]; WS; WebSocket closed, server estunweb, code: undefined, reason: undefined
+[10:32:37.327]; WS; WebSocket closed, server estuncovision, code: undefined, reason: undefined
+[10:32:51.076]; SIGINT; SIGINT，CLOSING...
+[10:32:51.081]; WS; WebSocket closed, server asai, code: undefined, reason: undefined
+[10:32:51.081]; WS; WebSocket closed, server estunweb, code: undefined, reason: undefined
+[10:32:51.082]; WS; WebSocket closed, server estuncocontrol, code: undefined, reason: undefined
+[10:32:51.082]; WS; WebSocket closed, server estuncomultiarm, code: undefined, reason: undefined
+[10:32:51.082]; WS; WebSocket closed, server estuncovision, code: undefined, reason: undefined
