@@ -18,6 +18,7 @@
     "asai-js-as": "0.2.6",
     "asai-vue-css": "0.2.14",
     "asai-vue-host": "0.2.58",
+    "asai-vue-host-base": "0.2.5",
     "vue": "3.5.22"
   },
   "devDependencies": {

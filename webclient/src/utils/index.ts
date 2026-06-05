@@ -6,6 +6,11 @@ import AsaiVueHost from '../plugs/asai-vue-host/src/components/index';
 // import AsaiVueHost from 'asai-vue-host';
 // import '/node_modules/asai-vue-host/dist/asai-vue-host.css';
 
+// 导入AsaiVueHostBase模块（前置必须的模块，先加载）
+import AsaiVueHostBase from '../plugs/asai-vue-host-base/src/components/index';
+// import AsaiVueHostBase from 'asai-vue-host-base';
+// import '/node_modules/asai-vue-host-base/dist/asai-vue-host-base.css';
+
 // 项目组件模块
 import asailib from '../lib/index';
 
@@ -20,6 +25,7 @@ export default {
     const { lib, createComponentLoader } = LibInit();
     const installModules = [
       AsaiVueHost,
+      AsaiVueHostBase,
       asailib, // 挂载基础组件
     ];
     installModules.forEach((module: any) => module.install(app, lib));
