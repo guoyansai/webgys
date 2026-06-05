@@ -2,9 +2,9 @@
 import LibInit from '../lib/LibInit';
 
 // 导入AsaiVueHost模块（前置必须的模块，先加载）
-import AsaiVueHost from '../plugs/asai-vue-host/src/components/index';
-// import AsaiVueHost from 'asai-vue-host';
-// import '/node_modules/asai-vue-host/dist/asai-vue-host.css';
+// import AsaiVueHost from '../plugs/asai-vue-host/src/components/index';
+import AsaiVueHost from 'asai-vue-host';
+import '/node_modules/asai-vue-host/dist/asai-vue-host.css';
 
 // 项目组件模块
 import asailib from '../lib/index';

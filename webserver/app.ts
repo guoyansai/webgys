@@ -23,13 +23,13 @@ try {
       $asai.hostconfig = cfg || {};
 
       // 插件功能
-      $asai.asaihost = require('./src/plugs/asai-nodejs-host/AsaiHost');
-      Object.assign($asai.$lib, $asai.asaihost?.AsaiCommon || {});
-      $asai.dataserver = require('./src/plugs/asai-nodejs-dbfile/db');
-
-      // $asai.asaihost = require('asai-nodejs-host');
+      // $asai.asaihost = require('./src/plugs/asai-nodejs-host/AsaiHost');
       // Object.assign($asai.$lib, $asai.asaihost?.AsaiCommon || {});
-      // $asai.dataserver = require('asai-nodejs-dbfile');
+      // $asai.dataserver = require('./src/plugs/asai-nodejs-dbfile/db');
+
+      $asai.asaihost = require('asai-nodejs-host');
+      Object.assign($asai.$lib, $asai.asaihost?.AsaiCommon || {});
+      $asai.dataserver = require('asai-nodejs-dbfile');
 
       // 系统功能
       const { sysWork } = require('./src/work/sys/serversys')($asai);

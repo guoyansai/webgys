@@ -17,7 +17,7 @@
   "dependencies": {
     "asai-js-as": "0.2.5",
     "asai-vue-css": "0.2.14",
-    "asai-vue-host": "0.2.56",
+    "asai-vue-host": "0.2.57",
     "vue": "3.5.22"
   },
   "devDependencies": {

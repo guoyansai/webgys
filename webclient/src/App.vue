@@ -4,8 +4,8 @@ import { defineAsyncComponent, getCurrentInstance, provide } from 'vue';
 import AppRun from './AppRun.vue';
 
 // 插件实现
-import AsaiJsAs from './plugs/asai-js-as/AsaiJsAs.ts';
-// import AsaiJsAs from 'asai-js-as';
+// import AsaiJsAs from './plugs/asai-js-as/AsaiJsAs.ts';
+import AsaiJsAs from 'asai-js-as';
 
 // css插件
 import AsaiVueCss from 'asai-vue-css';

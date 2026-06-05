@@ -45,8 +45,7 @@
   "dependencies": {
     "asai-nodejs-dbfile": "0.2.4",
     "asai-nodejs-fs": "0.2.1",
-    "asai-nodejs-host": "0.2.29",
-    "ws": "^8.18.2"
+    "asai-nodejs-host": "0.2.30"
   },
   "devDependencies": {
     "@types/node": "20.17.0",
