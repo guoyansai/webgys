@@ -1,4 +1,5 @@
 const $lib: any = require('./src/utils/lib');
+      console.log(666.555,$lib);
 const $asai: any = {
   $lib,
   connectionshttp: {},
@@ -41,6 +42,7 @@ try {
         jsonpWork,
       });
       $asai.asaiWs = asaiWs;
+      console.log(666.555,$asai.hostconfig,$asai.asaiWs);
       if ($asai.hostconfig.ip) {
         StartAsaiHost();
       } else {

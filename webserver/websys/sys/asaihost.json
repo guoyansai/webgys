@@ -63,7 +63,7 @@
       "proxyhttptype": "http://",
       "proxyport": 9298,
       "httptype": "http://",
-      "port": 9198
+      "port": 9598
     },
     "asaiweb": {
       "proxyhttptype": "https://",
@@ -95,7 +95,7 @@
       "oncors": 0,
       "wstype": "ws://",
       "httptype": "http://",
-      "port": 9198,
+      "port": 9598,
       "cors": []
     },
     "estunweb": {
