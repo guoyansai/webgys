@@ -15,9 +15,9 @@
     "preinstall": "npx check-engine"
   },
   "dependencies": {
-    "asai-js-as": "0.2.5",
+    "asai-js-as": "0.2.6",
     "asai-vue-css": "0.2.14",
-    "asai-vue-host": "0.2.57",
+    "asai-vue-host": "0.2.58",
     "vue": "3.5.22"
   },
   "devDependencies": {
