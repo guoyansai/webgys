@@ -6,7 +6,6 @@ import AppRun from './AppRun.vue';
 // 插件实现
 // import AsaiJsAs from './plugs/asai-js-as/AsaiJsAs.ts';
 import AsaiJsAs from 'asai-js-as';
-console.log(AsaiJsAs);
 
 // css插件
 import AsaiVueCss from 'asai-vue-css';
