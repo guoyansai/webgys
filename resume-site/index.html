@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>郭言赛 · 个人简历 | WEB 架构师 / 前端专家 / 技术总监</title>
+<meta name="description" content="郭言赛（阿赛）个人简历：二十余年 WEB / APP / 软件全栈开发经验，求职 WEB 架构师、前端专家、技术总监。">
+<meta name="keywords" content="郭言赛,阿赛,简历,WEB架构师,前端专家,技术总监,全栈开发,南京">
+<meta name="author" content="郭言赛">
+<meta name="theme-color" content="#0a1a24">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<div class="shell">
+  <!-- ============ 侧边栏 ============ -->
+  <aside class="side">
+    <div class="side-inner">
+      <p class="eyebrow">Curriculum Vitae · Asai</p>
+
+      <div class="brand">
+        <h1 class="name"><span>郭言赛</span></h1>
+        <p class="name-en">Guo Yansai · Asai Studio</p>
+      </div>
+
+      <p class="role">WEB 架构师<i>/</i>前端专家<i>/</i>技术总监</p>
+
+      <p class="summary">二十余年实战开发经验，深耕 WEB、APP 与应用软件全栈架构，专注稳定性、安全性与高性能设计，并精通 AI 工具与 Agent 开发。</p>
+
+      <div class="stats">
+        <div class="stat"><b>24<span style="font-size:.55em">年</span></b><span>从业经验</span></div>
+        <div class="stat"><b>73<span style="font-size:.55em">+</span></b><span>项目作品</span></div>
+        <div class="stat"><b>11<span style="font-size:.55em">项</span></b><span>核心技能</span></div>
+      </div>
+
+      <nav class="nav" id="nav" aria-label="页面导航">
+        <a href="#about"><em>01</em>关于我</a>
+        <a href="#experience"><em>02</em>工作经历</a>
+        <a href="#skills"><em>03</em>专业技能</a>
+        <a href="#works"><em>04</em>代表作品</a>
+        <a href="#certs"><em>05</em>证书荣誉</a>
+      </nav>
+
+      <dl class="contact" id="contact"></dl>
+    </div>
+
+    <div class="side-foot">
+      <p>Nanjing · Jiangning<br>Since 2002</p>
+      <button class="btn-print" id="btnPrint" type="button">打印简历</button>
+    </div>
+  </aside>
+
+  <!-- ============ 正文 ============ -->
+  <main class="main">
+    <div class="main-inner">
+
+      <section class="section" id="about">
+        <header class="sec-head">
+          <span class="sec-num">01</span>
+          <div class="sec-title-wrap">
+            <p class="sec-en">Profile</p>
+            <h2 class="sec-title">关于我</h2>
+          </div>
+        </header>
+        <div id="aboutBody"></div>
+      </section>
+
+      <section class="section" id="experience">
+        <header class="sec-head">
+          <span class="sec-num">02</span>
+          <div class="sec-title-wrap">
+            <p class="sec-en">Experience</p>
+            <h2 class="sec-title">工作经历</h2>
+          </div>
+        </header>
+        <div class="timeline" id="timeline"></div>
+      </section>
+
+      <section class="section" id="skills">
+        <header class="sec-head">
+          <span class="sec-num">03</span>
+          <div class="sec-title-wrap">
+            <p class="sec-en">Expertise</p>
+            <h2 class="sec-title">专业技能</h2>
+          </div>
+        </header>
+        <div class="skills" id="skillsGrid"></div>
+      </section>
+
+      <section class="section" id="works">
+        <header class="sec-head">
+          <span class="sec-num">04</span>
+          <div class="sec-title-wrap">
+            <p class="sec-en">Selected Works</p>
+            <h2 class="sec-title">代表作品</h2>
+          </div>
+        </header>
+        <div class="works-bar">
+          <p class="works-count">共 <b id="worksTotal">0</b> 个项目 · 可按关键词检索</p>
+          <label class="search">
+            <input id="worksSearch" type="search" placeholder="搜索项目名称或关键词" aria-label="搜索项目">
+          </label>
+        </div>
+        <div class="works" id="worksGrid"></div>
+        <div class="works-more" id="worksMore"></div>
+      </section>
+
+      <section class="section" id="certs">
+        <header class="sec-head">
+          <span class="sec-num">05</span>
+          <div class="sec-title-wrap">
+            <p class="sec-en">Credentials</p>
+            <h2 class="sec-title">证书荣誉</h2>
+          </div>
+        </header>
+        <div class="certs" id="certsGrid"></div>
+      </section>
+
+      <footer class="footer">
+        <p>Curriculum Vitae · Guo Yansai<br>Updated 2026 · Nanjing, China</p>
+        <p class="sign">郭言赛</p>
+      </footer>
+
+    </div>
+  </main>
+</div>
+
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
